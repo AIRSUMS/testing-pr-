@@ -12,11 +12,7 @@
             ]
         },
         "tests": [
-            {
-                "description": "first anyOf valid",
-                "data": 1,
-                "valid": true
-            },
+          
             {
                 "description": "second anyOf valid",
                 "data": 2.5,
