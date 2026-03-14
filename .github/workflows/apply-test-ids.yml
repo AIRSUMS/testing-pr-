@@ -19,12 +19,11 @@ jobs:
         id: filter
         with:
           filters: |
-            non_json:
-              - '**'
-              - '!tests/**/*.json'
+            only_json:
+              - 'tests/**/*.json'
 
       - name: Block mixed changes
-        if: steps.filter.outputs.non_json == 'true'
+        if: steps.filter.outputs.only_json == 'false'
         run: |
           echo "PR changes files outside tests/**/*.json"
           exit 1
