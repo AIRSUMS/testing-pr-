@@ -1,0 +1,20 @@
+[
+    {
+        "description": "simple string type test",
+        "schema": {
+            "type": "string"
+        },
+        "tests": [
+            {
+                "description": "a string is valid",
+                "data": "foo",
+                "valid": true
+            },
+            {
+                "description": "a number is invalid",
+                "data": 1,
+                "valid": false
+            }
+        ]
+    }
+]
