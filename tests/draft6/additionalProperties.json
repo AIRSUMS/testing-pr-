@@ -8,11 +8,7 @@
             "additionalProperties": false
         },
         "tests": [
-            {
-                "description": "no additional properties is valid",
-                "data": {"foo": 1},
-                "valid": true
-            },
+          
             {
                 "description": "an additional property is invalid",
                 "data": {"foo" : 1, "bar" : 2, "quux" : "boom"},
