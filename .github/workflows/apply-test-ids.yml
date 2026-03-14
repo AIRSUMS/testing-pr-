@@ -18,13 +18,14 @@ jobs:
         uses: dorny/paths-filter@v3
         id: filter
         with:
-          base: ${{ github.event.pull_request.base.sha }}
-          ref: ${{ github.event.pull_request.head.sha }}
           filters: |
             only_json:
               - 'tests/**/*.json'
             non_json:
+              - 'tests/**'
               - '!tests/**/*.json'
+              - '**'
+              - '!tests/**'
 
       - name: Block mixed changes
         if: steps.filter.outputs.non_json == 'true'
