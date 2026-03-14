@@ -1,0 +1,15 @@
+[
+    {
+        "description": "string type",
+        "schema": {
+            "type": "string"
+        },
+        "tests": [
+            {
+                "description": "valid string",
+                "data": "foo",
+                "valid": true
+            }
+        ]
+    }
+]
