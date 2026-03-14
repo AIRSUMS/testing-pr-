@@ -22,7 +22,6 @@ jobs:
             tests:
               - 'tests/**/*.json'
             other:
-              - '**'
               - '!tests/**/*.json'
 
       - name: Block mixed changes
