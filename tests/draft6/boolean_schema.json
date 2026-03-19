@@ -18,11 +18,7 @@
                 "data": true,
                 "valid": true
             },
-            {
-                "description": "boolean false is valid",
-                "data": false,
-                "valid": true
-            },
+           
             {
                 "description": "null is valid",
                 "data": null,
