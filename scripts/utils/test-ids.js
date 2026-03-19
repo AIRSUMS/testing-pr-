@@ -12,8 +12,6 @@ import { getSchema, getKeywordId, getKeywordName } from "@hyperjump/json-schema/
 import "@hyperjump/json-schema/draft-2020-12";
 import "@hyperjump/json-schema/draft-2019-09";
 import "@hyperjump/json-schema/draft-07";
-import "@hyperjump/json-schema/draft-06";
-import "@hyperjump/json-schema/draft-04";
 
 const DIALECT_MAP = {
   "v1": "https://json-schema.org/v1",
